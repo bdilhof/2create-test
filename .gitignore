@@ -1,14 +1,45 @@
-.architect
-bootstrap.css
-bootstrap.js
-bootstrap.json
-bootstrap.jsonp
-build/
-classic.json
-classic.jsonp
-ext/
-modern.json
-modern.jsonp
-resources/sass/.sass-cache/
-resources/.arch-internal-preview.css
-.arch-internal-preview.css
+# Ignore docs files
+/_gh_pages/
+/site/.jekyll-metadata
+/site/docs/**/dist/
+# Hugo folders
+/resources/
+
+# Ignore ruby/bundler files
+/.bundle/
+/vendor/
+/.ruby-version
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*~
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+
+# Komodo
+.komodotools
+*.komodoproject
+
+# Folders to ignore
+/js/coverage/
+/node_modules/
