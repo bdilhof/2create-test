@@ -1,0 +1,184 @@
+// variables
+
+$color-green: #86be40;
+
+$color-grey-primary: #878787;
+$color-grey-secondary: #5a5b5d;
+
+
+body {
+  color: $color-grey-primary;
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+a {
+  color: #313232;
+}
+
+a:hover {
+  color: $color-green;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $color-green;
+  font-family: "Playfair Display";
+}
+
+h2, .h2 {
+  font-size: 3.125em;
+}
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 1.25em 2.5em;
+}
+
+.btn-primary {
+  background-color: $color-green;
+  border-color: $color-green;
+}
+
+.navbar {
+
+  padding: 0;
+  min-height: 9.0625em;
+
+  .navbar-nav li {
+    padding: 0 3.125em 0 0;
+  }
+
+  .navbar-nav li:last-child {
+    padding: 0;
+  }
+
+  .navbar-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.875em;
+    padding-bottom: 0.625em;
+    border-bottom: solid 1px transparent;
+  }
+
+  .navbar-nav a:hover,
+  .navbar-nav a.active {
+    color: $color-green;
+    border-bottom: solid 1px $color-green;
+  }
+
+}
+
+
+
+.intro-teaser {
+
+  height: 52.8125em;
+  background-size: cover;
+  color: #fff;
+  padding-top: 7.8125em;
+
+  .headline {
+    color: #fff;
+    font-size: 4.9375em;
+    text-shadow: 0px 5px 20px rgba(0,0,0,.85);
+  }
+
+  &.day {
+    background-image: url('../images/welcome_image_day.png');
+  }
+
+  &.night {
+    background-image: url('../images/welcome_image_night.jpg');
+  }
+
+}
+
+.cta-block {
+
+  color: #fff;
+  background-color: $color-grey-secondary;
+  opacity: 0.95;
+  text-align: center;
+  margin-top: -9.375em;
+  margin-bottom: 5em;
+  padding: 3.75em 4.375em 2.8125em 4.375em;
+
+  .title {
+    color: #FFF;
+    font-size: 3.125em;
+  }
+
+  .buttons .btn {
+    margin: 0 0.9375em;
+  }
+
+}
+
+.gallery {
+  background: #ededed;
+}
+
+.blockquote {
+
+  &::before {
+    content: "”";
+    position: absolute;
+    color: #fafbfc;
+    left: 130px;
+    top: -32px;
+    font-size: 13.5625em;
+    font-family: "Playfair Display", sans-serif;
+    opacity: 0.1;
+    display: block;
+  }
+
+  background-color: #5a5b5d;
+  color: #fff;
+  padding: 5em 8.75em 1em 10.9375em;
+  font-size: 1.25em;
+  margin-bottom: 3.4375em;
+}
+
+.contact-form {
+  background: #ededed;
+  text-align: center;
+  padding: 4.0625em 0 3.125em;
+
+  .form-group {
+    text-align: left;
+  }
+
+  input {
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: solid 1px #313232;
+    padding-left: 0;
+  }
+
+}
+
+.site-footer {
+
+  background-color: #505151;
+  padding: 4.375em 0;
+  white-space: nowrap;
+
+}
+
+.created-by {
+  padding: .5em 0;
+  text-align: center;
+  background: #313232;
+  color: white;
+  font-size: 1em;
+  margin: 0;
+}

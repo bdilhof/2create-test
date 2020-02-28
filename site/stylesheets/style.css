@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* General */
+/* line 9, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+body {
+  color: #878787;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 14, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+p {
+  font-size: 1.25em;
+}
+
+/* line 18, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+a {
+  color: #313232;
+}
+
+/* line 22, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+a:hover {
+  color: #86be40;
+}
+
+/* line 26, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #86be40;
+  font-family: "Playfair Display";
+}
+
+/* line 32, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+h2, .h2 {
+  font-size: 3.125em;
+}
+
+/* line 36, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 1.25em 2.5em;
+}
+
+/* line 43, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.btn-primary {
+  background-color: #86be40;
+  border-color: #86be40;
+}
+
+/* line 48, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.navbar {
+  padding: 0;
+  min-height: 9.0625em;
+}
+
+/* line 53, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.navbar .navbar-nav li {
+  padding: 0 3.125em 0 0;
+}
+
+/* line 57, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.navbar .navbar-nav li:last-child {
+  padding: 0;
+}
+
+/* line 61, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.navbar .navbar-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.875em;
+  padding-bottom: 0.625em;
+  border-bottom: solid 1px transparent;
+}
+
+/* line 69, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.navbar .navbar-nav a:hover,
+.navbar .navbar-nav a.active {
+  color: #86be40;
+  border-bottom: solid 1px #86be40;
+}
+
+/* line 79, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.intro-teaser {
+  height: 52.8125em;
+  background-size: cover;
+  color: #fff;
+  padding-top: 7.8125em;
+}
+
+/* line 86, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.intro-teaser .headline {
+  color: #fff;
+  font-size: 4.9375em;
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.85);
+}
+
+/* line 92, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.intro-teaser.day {
+  background-image: url("../images/welcome_image_day.png");
+}
+
+/* line 96, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.intro-teaser.night {
+  background-image: url("../images/welcome_image_night.jpg");
+}
+
+/* line 102, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.cta-block {
+  color: #fff;
+  background-color: #5a5b5d;
+  opacity: 0.95;
+  text-align: center;
+  margin-top: -9.375em;
+  margin-bottom: 5em;
+  padding: 3.75em 4.375em 2.8125em 4.375em;
+}
+
+/* line 112, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.cta-block .title {
+  color: #FFF;
+  font-size: 3.125em;
+}
+
+/* line 117, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.cta-block .buttons .btn {
+  margin: 0 0.9375em;
+}
+
+/* line 123, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.gallery {
+  background: #ededed;
+}
+
+/* line 127, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.blockquote {
+  background-color: #5a5b5d;
+  color: #fff;
+  padding: 5em 8.75em 1em 10.9375em;
+  font-size: 1.25em;
+  margin-bottom: 3.4375em;
+}
+
+/* line 129, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.blockquote::before {
+  content: "”";
+  position: absolute;
+  color: #fafbfc;
+  left: 130px;
+  top: -32px;
+  font-size: 13.5625em;
+  font-family: "Playfair Display", sans-serif;
+  opacity: 0.1;
+  display: block;
+}
+
+/* line 148, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.contact-form {
+  background: #ededed;
+  text-align: center;
+  padding: 4.0625em 0 3.125em;
+}
+
+/* line 153, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.contact-form .form-group {
+  text-align: left;
+}
+
+/* line 157, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.contact-form input {
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  border-bottom: solid 1px #313232;
+  padding-left: 0;
+}
+
+/* line 169, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.site-footer {
+  background-color: #505151;
+  padding: 4.375em 0;
+  white-space: nowrap;
+}
+
+/* line 177, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/_custom.scss */
+.created-by {
+  padding: .5em 0;
+  text-align: center;
+  background: #313232;
+  color: white;
+  font-size: 1em;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
