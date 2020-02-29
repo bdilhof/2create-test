@@ -1,15 +1,22 @@
+// functions
+
 // variables
 
 $color-green: #86be40;
-$color-grey-primary: #878787;
-$color-grey-secondary: #5a5b5d;
-$transition-speed: 0.5s;
 
-$space-small: 2.5em;
-$space-big: 2 * $space-small;
+$color-grey-very-dark: #4c4d4f;
+$color-grey-dark: #5a5b5d;
+$color-grey-light: #878787;
+
+$transition-speed: 0.15s;
+$spacer: 1.25em; // 20px
+
+html {
+  font-size: 100%;
+}
 
 body {
-  color: $color-grey-primary;
+  color: $color-grey-light;
   font-family: Helvetica, sans-serif;
 }
 
@@ -17,6 +24,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: $color-green;
   font-family: "Playfair Display", sans-serif;
+  // margin-bottom: $spacer * 2;
+  // TODO: same as <p>
+  margin-bottom: 40px;
 }
 
 h2, .h2 {
@@ -25,12 +35,15 @@ h2, .h2 {
 
 p {
   font-size: 1.25em;
-  margin: 2.5em 0;
+  // margin-bottom: $spacer * 2;
+  // TODO: resolve function
+  margin-bottom: 40px;
 }
 
 a:link,
 a:visited {
-  color: #313232;
+  color: $color-grey-dark;
+  transition: all $transition-speed;
 }
 
 a:hover,
@@ -46,13 +59,30 @@ a.btn:visited {
   white-space: nowrap;
   padding: 1.25em 2.5em;
   color: #FFF;
+  box-shadow: none;
+
+  .site-footer & {
+    font-size: 0.75em;
+    background: transparent;
+    color: #878787;
+    border-color: #878787;
+    padding: 0.625em 1.875em;
+  }
+
 }
 
 .btn:hover,
 a.btn:hover,
 a.btn:active {
+
   background-color: #313232;
   border-color: #313232;
+
+  .site-footer & {
+    color: #fff;
+    border-color: #fff;
+  }
+
 }
 
 .btn-primary {
@@ -65,8 +95,12 @@ a.btn:active {
   padding: 0;
   min-height: 9.0625em;
 
+  .container {
+    max-width: 1200px;
+  }
+
   .navbar-nav li {
-    padding: 0 3.125em 0 0;
+    padding: 0 $spacer * 2 0 0;
   }
 
   .navbar-nav li:last-child {
@@ -95,12 +129,13 @@ a.btn:active {
   height: 52.8125em;
   background-size: cover;
   color: #fff;
-  padding-top: 7.8125em;
+  padding-top: $spacer * 6;
 
   .headline {
     color: #fff;
     font-size: 4.9375em;
-    text-shadow: 0px 5px 20px rgba(0,0,0,.85);
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, .85);
+    margin: 0;
   }
 
   &.day {
@@ -116,12 +151,12 @@ a.btn:active {
 .cta-block {
 
   color: #fff;
-  background-color: $color-grey-secondary;
+  background-color: $color-grey-dark;
   opacity: 0.95;
   text-align: center;
-  margin-top: -9.375em;
-  margin-bottom: 5em;
-  padding: 3.75em 4.375em 2.8125em 4.375em;
+  margin-top: - $spacer * 7;
+  margin-bottom: $spacer * 4;
+  padding: 3.75em 3.75em 2.5em 3.75em;
 
   .title {
     color: #FFF;
@@ -137,15 +172,37 @@ a.btn:active {
 .gallery {
 
   background: #ededed;
+  margin-bottom: $spacer * 2;
 
 }
 
 .blockquote {
 
+  &::before {
+    content: "”";
+    position: absolute;
+    color: #fafbfc;
+    left: 130px;
+    top: 0.2764976959em;
+    font-size: 13.5625em;
+    font-family: "Playfair Display", sans-serif;
+    opacity: 0.1;
+    display: block;
+  }
+
   background-color: #5a5b5d;
   color: #fff;
-  padding: 5em 8.75em 1em 10.9375em;
-  margin-bottom: 3.4375em;
+  text-align: left;
+  padding: {
+    top: $spacer * 4;
+    right: $spacer * 7;
+    bottom: $spacer;
+    left: $spacer * 8;
+  }
+
+  // margin-bottom: 3.4375em;
+  // TODO: fix this dirty hack
+  margin-bottom: 40px;
   font-size: 1em;
 
   p {
@@ -162,18 +219,6 @@ a.btn:active {
     justify-content: end;
   }
 
-  &::before {
-    content: "”";
-    position: absolute;
-    color: #fafbfc;
-    left: 130px;
-    top: 32px;
-    font-size: 13.5625em;
-    font-family: "Playfair Display", sans-serif;
-    opacity: 0.1;
-    display: block;
-  }
-
   .blockquote-footer {
 
     &::before {
@@ -188,17 +233,22 @@ a.btn:active {
 
   background: #ededed;
   text-align: center;
-  padding: 4.0625em 0 3.125em;
+  padding: {
+    top: $spacer * 3;
+    right: 0;
+    bottom: $spacer * 2;
+    left: 0;
+  }
 
   div[class^="col-"] {
     border-right: solid 1px #313232;
-    padding-right: 4.375em;
+    padding-right: $spacer * 3;
     padding-left: 0;
   }
 
   div[class^="col-"]:last-child {
     border-right: none;
-    padding-left: 4.375em;
+    padding-left: $spacer * 3;
     padding-right: 0;
   }
 
@@ -208,7 +258,7 @@ a.btn:active {
 
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: #4c4d4f;
+    color: $color-grey-very-dark;
     font-size: 2.375em;
   }
 
@@ -217,7 +267,7 @@ a.btn:active {
   }
 
   label {
-    color: #4c4d4f;
+    color: $color-grey-very-dark;
     font-size: 1.25em;
   }
 
@@ -238,10 +288,15 @@ a.btn:active {
       box-shadow: none;
     }
 
+    &::placeholder {
+      color: $color-grey-very-dark;
+    }
+
   }
 
   .form-text {
-    color: #4c4d4f;
+    color: $color-grey-very-dark;
+    margin: $spacer * 2 0;
   }
 
 }
@@ -249,8 +304,24 @@ a.btn:active {
 .site-footer {
 
   background-color: #505151;
-  padding: 4.375em 0;
+  padding: $spacer*3 0;
   white-space: nowrap;
+
+  p {
+    // margin-bottom: $spacer;
+    // TODO: hack :-(
+    margin-bottom: 20px;
+  }
+
+  a:link,
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover,
+  a:active {
+    color: #fff;
+  }
 
 }
 
@@ -270,9 +341,14 @@ a.btn:active {
     position: relative;
     font-size: 1.25em;
     font-family: Helvetica, sans-serif;
-    line-height: 1.5;
-    border-bottom: 1px solid #4c4d4f;
+    margin: 0;
+    border-bottom: 1px solid $color-grey-very-dark;
     cursor: pointer;
+
+    // line-height: 1.5;
+    // TODO: same as other elements
+    height: 40px;
+    line-height: 40px;
 
     &::after {
       content: '';
@@ -286,8 +362,8 @@ a.btn:active {
       transform: rotate(90deg);
       transition: all $transition-speed;
       position: absolute;
-      right: 13px;
-      top: 2px;
+      right: 12px;
+      top: 12px;
     }
 
   }
@@ -295,9 +371,18 @@ a.btn:active {
   a:link,
   a:visited {
 
-    color: $color-grey-primary;
+    color: $color-grey-light;
     font-size: 1.25em;
 
+  }
+
+  ul {
+    margin-bottom: $spacer;
+  }
+
+  li {
+    height: $spacer*2;
+    line-height: $spacer*2;
   }
 
 }
