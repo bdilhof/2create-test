@@ -1,15 +1,12 @@
-// functions
-
 // variables
 
 $color-green: #86be40;
-
 $color-grey-very-dark: #4c4d4f;
 $color-grey-dark: #5a5b5d;
 $color-grey-light: #878787;
-
 $transition-speed: 0.15s;
 $spacer: 1.25em; // 20px
+$gallery-outstand: 3 * $spacer;
 
 html {
   font-size: 100%;
@@ -38,6 +35,7 @@ p {
   // margin-bottom: $spacer * 2;
   // TODO: resolve function
   margin-bottom: 40px;
+  line-height: 1.2em;
 }
 
 a:link,
@@ -172,9 +170,81 @@ a.btn:active {
 .gallery {
 
   background: #ededed;
+  margin-top: $gallery-outstand;
   margin-bottom: $spacer * 2;
 
+  .container {
+    max-width: 1117px;
+  }
+
+  .grid {
+
+    top: -$gallery-outstand;
+    position: relative;
+    margin-bottom: 6.25em;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      margin: 5px;
+      position: relative;
+    }
+
+    img {
+      height: 17.9375em;
+    }
+
+  }
+
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // opacity: 0;
+    position: absolute;
+  }
+
+  .overlay .background {
+    width: 100%;
+    height: 100%;
+    background: $color-green;
+    transition: all $transition-speed;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .overlay .icon {
+    display: inline-block;
+    font-size: 2.125em;
+    color: #fff;
+    width: 1.7647058824em;
+    height: 1.7647058824em;
+    border: solid 1px white;
+    line-height: 1.7647058824em;
+    transition: all 0.5s;
+    text-align: center;
+    opacity: 0;
+    z-index: 9999;
+  }
+
+  .item:hover > .overlay .background {
+    opacity: .5;
+  }
+
+  .item:hover > .overlay .icon {
+    opacity: 1;
+  }
+
 }
+
+
+
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
 
 .blockquote {
 
@@ -207,6 +277,7 @@ a.btn:active {
 
   p {
     margin: 0;
+    line-height: inherit;
   }
 
   cite {
@@ -281,6 +352,7 @@ a.btn:active {
     border-bottom: solid 1px #313232;
     padding-left: 0;
     font-size: 1.25em;
+    resize: none;
 
     &:focus {
       -webkit-box-shadow: none;
@@ -370,10 +442,8 @@ a.btn:active {
 
   a:link,
   a:visited {
-
     color: $color-grey-light;
     font-size: 1.25em;
-
   }
 
   ul {
