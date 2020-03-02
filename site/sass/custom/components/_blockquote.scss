@@ -1,0 +1,53 @@
+.blockquote {
+
+  &::before {
+    content: "”";
+    position: absolute;
+    color: #fafbfc;
+    left: 130px;
+    top: 0.2764976959em;
+    font-size: 13.5625em;
+    font-family: "Playfair Display", sans-serif;
+    opacity: 0.1;
+    display: block;
+  }
+
+  background-color: #5a5b5d;
+  color: #fff;
+  text-align: left;
+  padding: {
+    top: $spacer * 4;
+    right: $spacer * 7;
+    bottom: $spacer;
+    left: $spacer * 8;
+  }
+
+  // margin-bottom: 3.4375em;
+  // TODO: fix this dirty hack
+  margin-bottom: 40px;
+  font-size: 1em;
+
+  p {
+    margin: 0;
+    line-height: inherit;
+  }
+
+  cite {
+    font-style: normal;
+  }
+
+  footer {
+    margin-top: 1em;
+    display: flex;
+    justify-content: end;
+  }
+
+  .blockquote-footer {
+
+    &::before {
+      display: none;
+    }
+
+  }
+
+}

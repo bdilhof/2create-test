@@ -1,0 +1,33 @@
+.navbar {
+
+  padding: 0;
+  min-height: 9.0625em;
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .navbar-nav li {
+    padding: 0 $spacer * 2 0 0;
+  }
+
+  .navbar-nav li:last-child {
+    padding: 0;
+  }
+
+  .navbar-nav a:link,
+  .navbar-nav a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.875em;
+    padding-bottom: 0.625em;
+    border-bottom: solid 1px transparent;
+  }
+
+  .navbar-nav a:hover,
+  .navbar-nav a.active {
+    color: $color-green;
+    border-bottom: solid 1px $color-green;
+  }
+
+}

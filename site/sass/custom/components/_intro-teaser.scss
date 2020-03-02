@@ -1,0 +1,23 @@
+.intro-teaser {
+
+  height: 52.8125em;
+  background-size: cover;
+  color: #fff;
+  padding-top: $spacer * 6;
+
+  .headline {
+    color: #fff;
+    font-size: 4.9375em;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, .85);
+    margin: 0;
+  }
+
+  &.day {
+    background-image: url('../images/welcome_image_day.png');
+  }
+
+  &.night {
+    background-image: url('../images/welcome_image_night.jpg');
+  }
+
+}

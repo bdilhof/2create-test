@@ -1,0 +1,50 @@
+.shops-accordion {
+
+  .accordion-heading {
+
+    position: relative;
+    font-size: 1.25em;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    border-bottom: 1px solid $color-grey-very-dark;
+    cursor: pointer;
+
+    // line-height: 1.5;
+    // TODO: same as other elements
+    height: 40px;
+    line-height: 40px;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      display: inline-block;
+      vertical-align: middle;
+      border-style: solid;
+      border-width: 7px 0 7px 7px;
+      border-color: transparent transparent transparent #535456;
+      transform: rotate(90deg);
+      transition: all $transition-speed;
+      position: absolute;
+      right: 12px;
+      top: 12px;
+    }
+
+  }
+
+  a:link,
+  a:visited {
+    color: $color-grey-light;
+    font-size: 1.25em;
+  }
+
+  ul {
+    margin-bottom: $spacer;
+  }
+
+  li {
+    height: $spacer*2;
+    line-height: $spacer*2;
+  }
+
+}

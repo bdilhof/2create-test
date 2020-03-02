@@ -1,0 +1,72 @@
+.contact-form {
+
+  background: #ededed;
+  text-align: center;
+  padding: {
+    top: $spacer * 3;
+    right: 0;
+    bottom: $spacer * 2;
+    left: 0;
+  }
+
+  div[class^="col-"] {
+    border-right: solid 1px #313232;
+    padding-right: $spacer * 3;
+    padding-left: 0;
+  }
+
+  div[class^="col-"]:last-child {
+    border-right: none;
+    padding-left: $spacer * 3;
+    padding-right: 0;
+  }
+
+  .form-group {
+    text-align: left;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $color-grey-very-dark;
+    font-size: 2.375em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
+  label {
+    color: $color-grey-very-dark;
+    font-size: 1.25em;
+  }
+
+  .form-control {
+
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: solid 1px #313232;
+    padding-left: 0;
+    font-size: 1.25em;
+    resize: none;
+
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: $color-grey-very-dark;
+    }
+
+  }
+
+  .form-text {
+    color: $color-grey-very-dark;
+    margin: $spacer * 2 0;
+  }
+
+}
