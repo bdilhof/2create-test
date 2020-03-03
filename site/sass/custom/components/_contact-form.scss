@@ -21,10 +21,6 @@
     font-size: 1.25em;
   }
 
-  .form-group {
-    text-align: left;
-  }
-
   .form-control {
 
     background: none;
@@ -36,6 +32,7 @@
     padding-left: 0;
     font-size: 1.25em;
     resize: none;
+    text-align: center;
 
     &:focus {
       -webkit-box-shadow: none;
@@ -63,25 +60,32 @@
 @media (min-width: 768px) {
 
   .contact-form {
+
     padding: {
       top: $spacer * 3;
       right: 0;
       bottom: $spacer * 2;
       left: 0;
     }
-  }
 
-  .contact-form div[class^="col-"] {
-    border-right: solid 1px #313232;
-    padding-right: $spacer * 3;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
+    .form-group,
+    .form-control {
+      text-align: left;
+    }
 
-  .contact-form div[class^="col-"]:last-child {
-    border-right: none;
-    padding-left: $spacer * 3;
-    padding-right: 0;
+    div[class^="col-"] {
+      border-right: solid 1px #313232;
+      padding-right: $spacer * 3;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    div[class^="col-"]:last-child {
+      border-right: none;
+      padding-left: $spacer * 3;
+      padding-right: 0;
+    }
+
   }
 
 }

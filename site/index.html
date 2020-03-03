@@ -42,17 +42,13 @@
 </div>
 
 <!-- CTA block -->
-<div class="container">
-    <div class="row">
-        <div class="cta-block col-md-10 offset-md-1">
-            <h2 class="title">Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, qui, eaeius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.</p>
-            <div class="buttons"><a class="btn btn-primary" href="#" role="button">Ponuka bytov</a><a
-                    class="btn btn-primary" href="#" role="button">Viac o projekte</a></div>
-        </div>
-    </div>
+<div class="cta-block">
+    <h2 class="title">Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, qui, eaeius modi tempora incidunt ut labore et dolore
+        magnam aliquam quaerat voluptatem.</p>
+    <div class="buttons"><a class="btn btn-primary" href="#" role="button">Ponuka bytov</a><a
+            class="btn btn-primary" href="#" role="button">Viac o projekte</a></div>
 </div>
 
 <!-- Obsah s textom a obrazkom -->
@@ -98,46 +94,42 @@
 <!-- Galeria -->
 <div class="gallery text-center" id="gallery">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="grid">
-                    <a class="item" href="#">
-                        <img src="images/gallery/01.jpg" class="img-fluid" />
-                        <div class="overlay">
-                            <span class="background"></span>
-                            <span class="icon">+</span>
-                        </div>
-                    </a>
-                    <a class="item" href="#">
-                        <img src="images/gallery/02.jpg" class="img-fluid" />
-                        <div class="overlay">
-                            <span class="background"></span>
-                            <span class="icon">+</span>
-                        </div>
-                    </a>
-                    <a class="item" href="#">
-                        <img src="images/gallery/03.jpg" class="img-fluid" />
-                        <div class="overlay">
-                            <span class="background"></span>
-                            <span class="icon">+</span>
-                        </div>
-                    </a>
-                    <a class="item" href="#">
-                        <img src="images/gallery/04.jpg" class="img-fluid" />
-                        <div class="overlay">
-                            <span class="background"></span>
-                            <span class="icon">+</span>
-                        </div>
-                    </a>
-                    <a class="item" href="#">
-                        <img src="images/gallery/05.jpg" class="img-fluid" />
-                        <div class="overlay">
-                            <span class="background"></span>
-                            <span class="icon">+</span>
-                        </div>
-                    </a>
+        <div class="grid">
+            <a class="item" href="#">
+                <img src="images/gallery/01.jpg" />
+                <div class="overlay">
+                    <span class="background"></span>
+                    <span class="icon">+</span>
                 </div>
-            </div>
+            </a>
+            <a class="item" href="#">
+                <img src="images/gallery/02.jpg" />
+                <div class="overlay">
+                    <span class="background"></span>
+                    <span class="icon">+</span>
+                </div>
+            </a>
+            <a class="item" href="#">
+                <img src="images/gallery/03.jpg" />
+                <div class="overlay">
+                    <span class="background"></span>
+                    <span class="icon">+</span>
+                </div>
+            </a>
+            <a class="item" href="#">
+                <img src="images/gallery/04.jpg" />
+                <div class="overlay">
+                    <span class="background"></span>
+                    <span class="icon">+</span>
+                </div>
+            </a>
+            <a class="item" href="#">
+                <img src="images/gallery/05.jpg" />
+                <div class="overlay">
+                    <span class="background"></span>
+                    <span class="icon">+</span>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -157,7 +149,12 @@
             </div>
         </div>
         <div class="row mb-5 align-items-center">
-            <div class="col-md-6 col-lg-3">
+
+            <div class="col-md-6 order-md-2 col-lg-8 offset-lg-1">
+                <img src="images/location_map.png" alt="Location map" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 order-md-1 col-lg-3">
                 <div id="accordion" class="shops-accordion">
                     <div id="headingShopsAndServices">
                         <h5 class="accordion-heading" data-toggle="collapse" data-target="#shopsServices"
@@ -215,9 +212,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-8 offset-lg-1">
-                <img src="images/location_map.png" alt="Location map" class="img-fluid">
-            </div>
+
+
+
         </div>
     </div>
 </div>

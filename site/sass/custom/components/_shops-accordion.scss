@@ -10,11 +10,8 @@
     margin: 0;
     border-bottom: 1px solid $color-grey-very-dark;
     cursor: pointer;
-
-    // line-height: 1.5;
-    // TODO: same as other elements
-    height: 40px;
-    line-height: 40px;
+    height: 2em;
+    line-height: 2em;
 
     &::after {
       content: '';

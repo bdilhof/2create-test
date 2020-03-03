@@ -7,9 +7,8 @@
   margin-right: -$spacer;
 
   p {
-    // margin-bottom: $spacer;
-    // TODO: hack :-(
-    margin-bottom: 20px;
+    margin-bottom: 1em;
+    font-size: 1em;
   }
 
   a:link,
@@ -45,14 +44,18 @@
 
   }
 
-
-
 }
 
 @media (min-width: 768px) {
 
   .site-footer {
+
     padding: $spacer*3 0;
+
+    p {
+      font-size: 1.25em;
+    }
+
   }
 
 }

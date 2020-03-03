@@ -1,10 +1,10 @@
 .gallery {
 
   background: #ededed;
-  margin-top: $gallery-outstand;
   margin-bottom: $spacer * 2;
   margin-left: -$spacer;
   margin-right: -$spacer;
+  margin-top: $gallery-outstand;
 
   .container {
     max-width: 1117px;
@@ -12,19 +12,21 @@
 
   .grid {
 
-    top: -$gallery-outstand;
     position: relative;
     margin-bottom: 6.25em;
     display: flex;
     flex-wrap: wrap;
+    top: -$gallery-outstand;
 
     .item {
       margin: 5px;
       position: relative;
+      flex-grow: 1;
     }
 
     img {
-      height: 17.9375em;
+      width: 100%;
+      height: auto;
     }
 
   }
@@ -69,6 +71,24 @@
 
   .item:hover > .overlay .icon {
     opacity: 1;
+  }
+
+}
+
+@media (max-width: 1116px) {
+
+  .gallery {
+
+    .grid {
+      display: block;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+
+    .item {
+      display: block;
+    }
+
   }
 
 }

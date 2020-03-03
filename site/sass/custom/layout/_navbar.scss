@@ -13,7 +13,7 @@
   }
 
   .navbar-toggler {
-    margin: 0.5em 0;
+    margin: 1em 0;
   }
 
   .navbar-nav a:link,
@@ -36,14 +36,16 @@
 
   .navbar {
 
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+
     .navbar-collapse {
       background: $color-grey-dark;
       margin-left: - $spacer;
       margin-right: - $spacer;
 
       li {
-        height: 2.5em;
-        line-height: 2.5em;
+        height: 3.75em;
+        line-height: 3.75em;
         border-bottom: solid 1px $color-grey-light;
         padding-left: $spacer;
         padding-right: $spacer;
@@ -56,14 +58,14 @@
       .navbar-nav a:link,
       .navbar-nav a:visited {
         color: #fff;
+        font-size: 1em;
+        display: block;
       }
 
       .navbar-nav a:hover,
       .navbar-nav a.active {
         color: $color-green;
       }
-
-
 
     }
 
