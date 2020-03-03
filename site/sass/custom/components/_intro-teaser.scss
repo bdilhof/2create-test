@@ -4,6 +4,10 @@
   background-size: cover;
   color: #fff;
   padding-top: $spacer * 6;
+  margin-left: -$spacer;
+  margin-right: -$spacer;
+  padding-left: $spacer;
+  padding-right: $spacer;
 
   .headline {
     color: #fff;

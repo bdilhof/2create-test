@@ -2,24 +2,9 @@
 
   background: #ededed;
   text-align: center;
-  padding: {
-    top: $spacer * 3;
-    right: 0;
-    bottom: $spacer * 2;
-    left: 0;
-  }
-
-  div[class^="col-"] {
-    border-right: solid 1px #313232;
-    padding-right: $spacer * 3;
-    padding-left: 0;
-  }
-
-  div[class^="col-"]:last-child {
-    border-right: none;
-    padding-left: $spacer * 3;
-    padding-right: 0;
-  }
+  margin-left: -$spacer;
+  margin-right: -$spacer;
+  padding: $spacer;
 
   .form-group {
     text-align: left;
@@ -67,6 +52,31 @@
   .form-text {
     color: $color-grey-very-dark;
     margin: $spacer * 2 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .contact-form {
+    padding: {
+      top: $spacer * 3;
+      right: 0;
+      bottom: $spacer * 2;
+      left: 0;
+    }
+  }
+
+  .contact-form div[class^="col-"] {
+    border-right: solid 1px #313232;
+    padding-right: $spacer * 3;
+    padding-left: 0;
+  }
+
+  .contact-form div[class^="col-"]:last-child {
+    border-right: none;
+    padding-left: $spacer * 3;
+    padding-right: 0;
   }
 
 }

@@ -3,6 +3,8 @@
   background: #ededed;
   margin-top: $gallery-outstand;
   margin-bottom: $spacer * 2;
+  margin-left: -$spacer;
+  margin-right: -$spacer;
 
   .container {
     max-width: 1117px;

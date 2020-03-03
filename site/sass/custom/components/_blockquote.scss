@@ -15,12 +15,7 @@
   background-color: #5a5b5d;
   color: #fff;
   text-align: left;
-  padding: {
-    top: $spacer * 4;
-    right: $spacer * 7;
-    bottom: $spacer;
-    left: $spacer * 8;
-  }
+  padding: $spacer;
 
   // margin-bottom: 3.4375em;
   // TODO: fix this dirty hack
@@ -48,6 +43,20 @@
       display: none;
     }
 
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
+  .blockquote {
+    padding: {
+      top: $spacer * 4;
+      right: $spacer * 7;
+      bottom: $spacer;
+      left: $spacer * 8;
+    }
   }
 
 }
