@@ -9,9 +9,10 @@ html {
 body {
   color: #878787;
   font-family: Helvetica, sans-serif;
+  padding: 0 1.25em;
 }
 
-/* line 20, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 21, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #86be40;
@@ -19,32 +20,32 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 40px;
 }
 
-/* line 29, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 30, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 h2, .h2 {
   font-size: 3.125em;
 }
 
-/* line 33, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 34, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 p {
   font-size: 1.25em;
   margin-bottom: 40px;
   line-height: 1.2em;
 }
 
-/* line 41, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 42, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 a:link,
 a:visited {
   color: #5a5b5d;
   transition: all 0.15s;
 }
 
-/* line 47, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 48, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 a:hover,
 a:active {
   color: #86be40;
 }
 
-/* line 52, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 53, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 .btn,
 a.btn:link,
 a.btn:visited {
@@ -56,7 +57,7 @@ a.btn:visited {
   box-shadow: none;
 }
 
-/* line 62, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 63, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 .site-footer .btn, .site-footer
 a.btn:link, .site-footer
 a.btn:visited {
@@ -67,7 +68,7 @@ a.btn:visited {
   padding: 0.625em 1.875em;
 }
 
-/* line 72, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 73, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 .btn:hover,
 a.btn:hover,
 a.btn:active {
@@ -75,7 +76,7 @@ a.btn:active {
   border-color: #313232;
 }
 
-/* line 79, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 80, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 .site-footer .btn:hover, .site-footer
 a.btn:hover, .site-footer
 a.btn:active {
@@ -83,7 +84,7 @@ a.btn:active {
   border-color: #fff;
 }
 
-/* line 86, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
+/* line 87, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/general/_general.scss */
 .btn-primary {
   background-color: #86be40;
   border-color: #86be40;
@@ -91,26 +92,26 @@ a.btn:active {
 
 /* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
 .navbar {
-  padding: 0;
-  min-height: 9.0625em;
+  padding: 0 1.25em 0 1.25em;
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  margin-left: -20px;
+  margin-right: -20px;
+  z-index: 9999;
 }
 
-/* line 6, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+/* line 11, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
 .navbar .container {
   max-width: 1200px;
 }
 
-/* line 10, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
-.navbar .navbar-nav li {
-  padding: 0 2.5em 0 0;
+/* line 15, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+.navbar .navbar-toggler {
+  margin: 0.5em 0;
 }
 
-/* line 14, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
-.navbar .navbar-nav li:last-child {
-  padding: 0;
-}
-
-/* line 18, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
 .navbar .navbar-nav a:link,
 .navbar .navbar-nav a:visited {
   text-transform: uppercase;
@@ -120,45 +121,121 @@ a.btn:active {
   border-bottom: solid 1px transparent;
 }
 
-/* line 27, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+/* line 28, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
 .navbar .navbar-nav a:hover,
 .navbar .navbar-nav a.active {
   color: #86be40;
-  border-bottom: solid 1px #86be40;
+}
+
+@media (max-width: 767px) {
+  /* line 39, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-collapse {
+    background: #5a5b5d;
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+  }
+  /* line 44, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-collapse li {
+    height: 2.5em;
+    line-height: 2.5em;
+    border-bottom: solid 1px #878787;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+  /* line 52, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-collapse li:last-child {
+    border-bottom: 0;
+  }
+  /* line 56, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-collapse .navbar-nav a:link,
+  .navbar .navbar-collapse .navbar-nav a:visited {
+    color: #fff;
+  }
+  /* line 61, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-collapse .navbar-nav a:hover,
+  .navbar .navbar-collapse .navbar-nav a.active {
+    color: #86be40;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 76, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar {
+    min-height: 4.53125em;
+    position: relative;
+  }
+  /* line 81, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-nav li {
+    padding: 0 1.25em 0 0;
+  }
+  /* line 85, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-nav li:last-child {
+    padding: 0;
+  }
+  /* line 89, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-nav a:link,
+  .navbar .navbar-nav a:visited {
+    padding-bottom: 0.2142857143em;
+  }
+  /* line 94, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-nav a:hover,
+  .navbar .navbar-nav a.active {
+    border-bottom: solid 1px #86be40;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 105, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar {
+    min-height: 9.0625em;
+  }
+  /* line 108, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_navbar.scss */
+  .navbar .navbar-nav li {
+    padding: 0 2.5em 0 0;
+  }
 }
 
 /* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
 .site-footer {
   background-color: #505151;
-  padding: 3.75em 0;
+  padding: 1em;
   white-space: nowrap;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
 }
 
-/* line 7, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+/* line 9, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
 .site-footer p {
   margin-bottom: 20px;
 }
 
-/* line 13, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+/* line 15, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
 .site-footer a:link,
 .site-footer a:visited {
   color: inherit;
 }
 
-/* line 18, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+/* line 20, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
 .site-footer a:hover,
 .site-footer a:active {
   color: #fff;
 }
 
-/* line 25, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+/* line 27, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
 .created-by {
   padding: .5em 0;
   text-align: center;
   background: #313232;
   color: white;
   font-size: 1em;
-  margin: 0;
+  margin: -1.25em -1.25em;
+}
+
+@media (min-width: 768px) {
+  /* line 38, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+  .site-footer {
+    padding: 3.75em 0;
+  }
 }
 
 /* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
@@ -166,10 +243,7 @@ a.btn:active {
   background-color: #5a5b5d;
   color: #fff;
   text-align: left;
-  padding-top: 5em;
-  padding-right: 8.75em;
-  padding-bottom: 1.25em;
-  padding-left: 10em;
+  padding: 1.25em;
   margin-bottom: 40px;
   font-size: 1em;
 }
@@ -187,77 +261,72 @@ a.btn:active {
   display: block;
 }
 
-/* line 30, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 25, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote p {
   margin: 0;
   line-height: inherit;
 }
 
-/* line 35, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 30, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote cite {
   font-style: normal;
 }
 
-/* line 39, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 34, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote footer {
   margin-top: 1em;
   display: flex;
   justify-content: end;
 }
 
-/* line 47, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 42, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote .blockquote-footer::before {
   display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 53, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+  .blockquote {
+    padding-top: 5em;
+    padding-right: 8.75em;
+    padding-bottom: 1.25em;
+    padding-left: 10em;
+  }
 }
 
 /* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form {
   background: #ededed;
   text-align: center;
-  padding-top: 3.75em;
-  padding-right: 0;
-  padding-bottom: 2.5em;
-  padding-left: 0;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
+  padding: 1.25em;
 }
 
-/* line 12, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
-.contact-form div[class^="col-"] {
-  border-right: solid 1px #313232;
-  padding-right: 3.75em;
-  padding-left: 0;
-}
-
-/* line 18, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
-.contact-form div[class^="col-"]:last-child {
-  border-right: none;
-  padding-left: 3.75em;
-  padding-right: 0;
-}
-
-/* line 24, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 9, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form .form-group {
   text-align: left;
 }
 
-/* line 28, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 13, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5, .contact-form h6,
 .contact-form .h1, .contact-form .h2, .contact-form .h3, .contact-form .h4, .contact-form .h5, .contact-form .h6 {
   color: #4c4d4f;
   font-size: 2.375em;
 }
 
-/* line 34, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form p {
   font-size: 1.125em;
 }
 
-/* line 38, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 23, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form label {
   color: #4c4d4f;
   font-size: 1.25em;
 }
 
-/* line 43, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 28, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form .form-control {
   background: none;
   -webkit-border-radius: 0;
@@ -270,22 +339,44 @@ a.btn:active {
   resize: none;
 }
 
-/* line 55, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 40, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form .form-control:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 61, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 46, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form .form-control::placeholder {
   color: #4c4d4f;
 }
 
-/* line 67, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 52, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form .form-text {
   color: #4c4d4f;
   margin: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 61, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+  .contact-form {
+    padding-top: 3.75em;
+    padding-right: 0;
+    padding-bottom: 2.5em;
+    padding-left: 0;
+  }
+  /* line 70, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+  .contact-form div[class^="col-"] {
+    border-right: solid 1px #313232;
+    padding-right: 3.75em;
+    padding-left: 0;
+  }
+  /* line 76, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+  .contact-form div[class^="col-"]:last-child {
+    border-right: none;
+    padding-left: 3.75em;
+    padding-right: 0;
+  }
 }
 
 /* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_cta-block.scss */
@@ -296,7 +387,7 @@ a.btn:active {
   text-align: center;
   margin-top: -8.75em;
   margin-bottom: 5em;
-  padding: 3.75em 3.75em 2.5em 3.75em;
+  padding: 1.25em;
 }
 
 /* line 11, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_cta-block.scss */
@@ -307,7 +398,24 @@ a.btn:active {
 
 /* line 16, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_cta-block.scss */
 .cta-block .buttons .btn {
-  margin: 0 0.9375em;
+  margin: 1.25em 0;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  /* line 25, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_cta-block.scss */
+  .cta-block {
+    padding: 3.75em 3.75em 2.5em 3.75em;
+  }
+  /* line 29, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_cta-block.scss */
+  .cta-block .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 34, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_cta-block.scss */
+  .cta-block .buttons .btn {
+    margin: 0 0.9375em;
+  }
 }
 
 /* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
@@ -315,14 +423,16 @@ a.btn:active {
   background: #ededed;
   margin-top: 3.75em;
   margin-bottom: 2.5em;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
 }
 
-/* line 7, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 9, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .container {
   max-width: 1117px;
 }
 
-/* line 11, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 13, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .grid {
   top: -3.75em;
   position: relative;
@@ -331,18 +441,18 @@ a.btn:active {
   flex-wrap: wrap;
 }
 
-/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 21, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .grid .item {
   margin: 5px;
   position: relative;
 }
 
-/* line 24, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 26, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .grid img {
   height: 17.9375em;
 }
 
-/* line 30, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 32, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .overlay {
   display: flex;
   justify-content: center;
@@ -354,7 +464,7 @@ a.btn:active {
   position: absolute;
 }
 
-/* line 41, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 43, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .overlay .background {
   width: 100%;
   height: 100%;
@@ -364,7 +474,7 @@ a.btn:active {
   opacity: 0;
 }
 
-/* line 50, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 52, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .overlay .icon {
   display: inline-block;
   font-size: 2.125em;
@@ -379,12 +489,12 @@ a.btn:active {
   z-index: 9999;
 }
 
-/* line 64, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 66, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .item:hover > .overlay .background {
   opacity: .5;
 }
 
-/* line 68, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
+/* line 70, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_gallery.scss */
 .gallery .item:hover > .overlay .icon {
   opacity: 1;
 }
@@ -395,9 +505,13 @@ a.btn:active {
   background-size: cover;
   color: #fff;
   padding-top: 7.5em;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
 }
 
-/* line 8, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_intro-teaser.scss */
+/* line 12, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_intro-teaser.scss */
 .intro-teaser .headline {
   color: #fff;
   font-size: 4.9375em;
@@ -405,17 +519,22 @@ a.btn:active {
   margin: 0;
 }
 
-/* line 15, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_intro-teaser.scss */
+/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_intro-teaser.scss */
 .intro-teaser.day {
   background-image: url("../images/welcome_image_day.png");
 }
 
-/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_intro-teaser.scss */
+/* line 23, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_intro-teaser.scss */
 .intro-teaser.night {
   background-image: url("../images/welcome_image_night.jpg");
 }
 
-/* line 3, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+/* line 1, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+.shops-accordion {
+  margin-bottom: 1.25em;
+}
+
+/* line 5, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
 .shops-accordion .accordion-heading {
   position: relative;
   font-size: 1.25em;
@@ -427,7 +546,7 @@ a.btn:active {
   line-height: 40px;
 }
 
-/* line 17, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
 .shops-accordion .accordion-heading::after {
   content: '';
   width: 0;
@@ -444,22 +563,29 @@ a.btn:active {
   top: 12px;
 }
 
-/* line 35, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+/* line 37, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
 .shops-accordion a:link,
 .shops-accordion a:visited {
   color: #878787;
   font-size: 1.25em;
 }
 
-/* line 41, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+/* line 43, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
 .shops-accordion ul {
   margin-bottom: 1.25em;
 }
 
-/* line 45, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+/* line 47, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
 .shops-accordion li {
   height: 2.5em;
   line-height: 2.5em;
+}
+
+@media (min-width: 768px) {
+  /* line 56, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_shops-accordion.scss */
+  .shops-accordion {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
