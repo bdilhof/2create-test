@@ -231,8 +231,19 @@ a.btn:active {
   margin: -1.25em -1.25em;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   /* line 38, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+  .site-footer {
+    text-align: center;
+  }
+  /* line 42, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
+  .site-footer div[class^="col-"] {
+    margin-bottom: 1.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 54, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/layout/_site-footer.scss */
   .site-footer {
     padding: 3.75em 0;
   }
@@ -248,49 +259,48 @@ a.btn:active {
   font-size: 1em;
 }
 
-/* line 3, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
-.blockquote::before {
-  content: "”";
-  position: absolute;
-  color: #fafbfc;
-  left: 130px;
-  top: 0.2764976959em;
-  font-size: 13.5625em;
-  font-family: "Playfair Display", sans-serif;
-  opacity: 0.1;
-  display: block;
-}
-
-/* line 25, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 13, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote p {
   margin: 0;
   line-height: inherit;
 }
 
-/* line 30, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 18, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote cite {
   font-style: normal;
 }
 
-/* line 34, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 22, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote footer {
   margin-top: 1em;
   display: flex;
   justify-content: end;
 }
 
-/* line 42, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+/* line 30, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
 .blockquote .blockquote-footer::before {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 53, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+  /* line 41, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
   .blockquote {
     padding-top: 5em;
     padding-right: 8.75em;
     padding-bottom: 1.25em;
     padding-left: 10em;
+  }
+  /* line 43, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_blockquote.scss */
+  .blockquote::before {
+    content: "”";
+    position: absolute;
+    color: #fafbfc;
+    left: 130px;
+    top: 0.2764976959em;
+    font-size: 13.5625em;
+    font-family: "Playfair Display", sans-serif;
+    opacity: 0.1;
+    display: block;
   }
 }
 
@@ -304,26 +314,26 @@ a.btn:active {
 }
 
 /* line 9, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
-.contact-form .form-group {
-  text-align: left;
-}
-
-/* line 13, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form h1, .contact-form h2, .contact-form h3, .contact-form h4, .contact-form h5, .contact-form h6,
 .contact-form .h1, .contact-form .h2, .contact-form .h3, .contact-form .h4, .contact-form .h5, .contact-form .h6 {
   color: #4c4d4f;
   font-size: 2.375em;
 }
 
-/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 15, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form p {
   font-size: 1.125em;
 }
 
-/* line 23, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+/* line 19, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
 .contact-form label {
   color: #4c4d4f;
   font-size: 1.25em;
+}
+
+/* line 24, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+.contact-form .form-group {
+  text-align: left;
 }
 
 /* line 28, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
@@ -357,21 +367,27 @@ a.btn:active {
   margin: 2.5em 0;
 }
 
+/* line 57, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+.contact-form div[class^="col-"] {
+  margin-bottom: 2.5em;
+}
+
 @media (min-width: 768px) {
-  /* line 61, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+  /* line 65, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
   .contact-form {
     padding-top: 3.75em;
     padding-right: 0;
     padding-bottom: 2.5em;
     padding-left: 0;
   }
-  /* line 70, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+  /* line 74, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
   .contact-form div[class^="col-"] {
     border-right: solid 1px #313232;
     padding-right: 3.75em;
     padding-left: 0;
+    margin-bottom: 0;
   }
-  /* line 76, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
+  /* line 81, ../../../../../Users/brunodilhof/Sites/2create.test/httpdocs/site/sass/custom/components/_contact-form.scss */
   .contact-form div[class^="col-"]:last-child {
     border-right: none;
     padding-left: 3.75em;

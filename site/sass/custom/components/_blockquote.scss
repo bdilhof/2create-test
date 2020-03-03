@@ -1,17 +1,5 @@
 .blockquote {
 
-  &::before {
-    content: "”";
-    position: absolute;
-    color: #fafbfc;
-    left: 130px;
-    top: 0.2764976959em;
-    font-size: 13.5625em;
-    font-family: "Playfair Display", sans-serif;
-    opacity: 0.1;
-    display: block;
-  }
-
   background-color: #5a5b5d;
   color: #fff;
   text-align: left;
@@ -51,6 +39,19 @@
 @media (min-width: 768px) {
 
   .blockquote {
+
+    &::before {
+      content: "”";
+      position: absolute;
+      color: #fafbfc;
+      left: 130px;
+      top: 0.2764976959em;
+      font-size: 13.5625em;
+      font-family: "Playfair Display", sans-serif;
+      opacity: 0.1;
+      display: block;
+    }
+
     padding: {
       top: $spacer * 4;
       right: $spacer * 7;

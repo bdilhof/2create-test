@@ -33,6 +33,22 @@
   margin: 0 -$spacer 0 -$spacer;
 }
 
+@media (max-width: 767px) {
+
+  .site-footer {
+
+    text-align: center;
+
+    div[class^="col-"] {
+      margin-bottom: $spacer;
+    }
+
+  }
+
+
+
+}
+
 @media (min-width: 768px) {
 
   .site-footer {

@@ -6,10 +6,6 @@
   margin-right: -$spacer;
   padding: $spacer;
 
-  .form-group {
-    text-align: left;
-  }
-
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     color: $color-grey-very-dark;
@@ -23,6 +19,10 @@
   label {
     color: $color-grey-very-dark;
     font-size: 1.25em;
+  }
+
+  .form-group {
+    text-align: left;
   }
 
   .form-control {
@@ -54,6 +54,10 @@
     margin: $spacer * 2 0;
   }
 
+  div[class^="col-"] {
+    margin-bottom: 2 * $spacer;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -71,6 +75,7 @@
     border-right: solid 1px #313232;
     padding-right: $spacer * 3;
     padding-left: 0;
+    margin-bottom: 0;
   }
 
   .contact-form div[class^="col-"]:last-child {
