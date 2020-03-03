@@ -1,5 +1,7 @@
 .shops-accordion {
 
+  margin-bottom: $spacer;
+
   .accordion-heading {
 
     position: relative;
@@ -45,6 +47,14 @@
   li {
     height: $spacer*2;
     line-height: $spacer*2;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .shops-accordion {
+    margin-bottom: 0;
   }
 
 }
